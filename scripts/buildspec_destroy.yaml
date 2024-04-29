@@ -21,6 +21,3 @@ phases:
       - "terraform init"
       - "terraform destroy -var-file=uat.tfvars --auto-approve"
 
-artifacts:
-  files:
-    - '**/*'
