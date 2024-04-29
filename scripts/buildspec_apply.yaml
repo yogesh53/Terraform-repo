@@ -18,8 +18,7 @@ phases:
       - "cd ${CODEBUILD_SRC_DIR}/${CODE_SRC_DIR}"
       - "terraform init"
       - "echo ## TERRAFORM APPLY : Starting with the Terraform Apply"
-      - "terraform apply -var-file=uat.tfvars"
-      - "terraform apply --auto-approve"
+      - "terraform apply -var-file=uat.tfvars -auto-approve"
       #- "terraform apply -input=false tfapply"
 
 artifacts:
